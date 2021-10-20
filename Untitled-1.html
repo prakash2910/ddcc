@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>dChikitsa DDCC Questionnaire</title>
+<link href="https://clinicaltables.nlm.nih.gov/lforms-versions/13.2.0/styles/lforms.min.css" media="screen" rel="stylesheet" />
+<style>body {
+    padding: 0.5em;
+  }</style>
+</head>
+<body>
+    <div id="formContainer">
+    </div>
+    <script src="https://clinicaltables.nlm.nih.gov/lforms-versions/13.2.0/lforms.min.js"></script>
+    <script>var formDef = {
+  "shortName": "DDCCCoreDataSetQuestionnaire",
+  "name": "DDCC Core Data Set Questionnaire",
+  "id": "DDCCVSCoreDataSetQuestionnaire",
+  "status": "draft",
+  "url": "http://worldhealthorganization.github.io/ddcc/DDCCVSCoreDataSetQuestionnaire",
+  "version": "0.2.1",
+  "experimental": true,
+  "date": "2021-06-02T18:30:00.000Z",
+  "publisher": "World Health Organization (WHO)",
+  "description": "DDCC Questionnaire for an Immunization event.",
+  "meta": {
+    "profile": [
+      "http://worldhealthorganization.github.io/ddcc/StructureDefinition/DDCCQuestionnaire"
+    ]
+  },
+        items: [{
+      "header": false,
+      "dataType": "ST",
+      "question": "Name",
+      "linkId": "name",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "name",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "editable": "1"
+    },
+    {
+      "header": false,
+      "dataType": "DT",
+      "question": "Date of birth",
+      "linkId": "birthDate",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "birthDate",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "0",
+        "max": "1"
+      },
+      "editable": "1"
+    },
+    {
+      "header": false,
+      "dataType": "ST",
+      "question": "Unique identifier",
+      "linkId": "identifier",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "identifier",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "0",
+        "max": "1"
+      },
+      "editable": "1"
+    },
+    {
+      "header": false,
+      "dataType": "CNE",
+      "question": "Sex",
+      "linkId": "sex",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "sex",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "0",
+        "max": "1"
+      },
+      "editable": "1",
+      "answers": [
+        {
+          "text": "Male",
+          "code": "male",
+          "system": "http://hl7.org/fhir/administrative-gender",
+          "label": null,
+          "score": null
+        },
+        {
+          "text": "Female",
+          "code": "female",
+          "system": "http://hl7.org/fhir/administrative-gender",
+          "label": null,
+          "score": null
+        },
+        {
+          "text": "Other",
+          "code": "other",
+          "system": "http://hl7.org/fhir/administrative-gender",
+          "label": null,
+          "score": null
+        },
+        {
+          "text": "Unknown",
+          "code": "unknown",
+          "system": "http://hl7.org/fhir/administrative-gender",
+          "label": null,
+          "score": null
+        }
+      ],
+    },
+    {
+      "header": false,
+      "dataType": "CNE",
+      "question": "Vaccine or prophylaxis",
+      "linkId": "vaccine",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "vaccine",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "editable": "1",
+      "answers": [
+        {
+          "text": "Covaxin",
+          "code": "XM1G90",
+          "system": "http://id.who.int/icd11/mms",
+          "label": null,
+          "score": null
+        },
+        {
+          "text": "Covishield®",
+          "code": "XM97T2",
+          "system": "http://id.who.int/icd11/mms",
+          "label": null,
+          "score": null
+        },
+        {
+          "text": "Sputnik-Light",
+          "code": "XM5QM6",
+          "system": "http://id.who.int/icd11/mms",
+          "label": null,
+          "score": null
+        },
+        {
+          "text": "COVID-19 vaccine",
+          "code": "XM68M6",
+          "system": "http://id.who.int/icd11/mms",
+          "label": null,
+          "score": null
+        },
+        {
+          "text": "COVID-19 vaccine, inactivated virus",
+          "code": "XM1NL1",
+          "system": "http://id.who.int/icd11/mms",
+          "label": null,
+          "score": null
+        },
+        {
+          "text": "COVID-19 vaccine, live attenuated virus",
+          "code": "XM5DF6",
+          "system": "http://id.who.int/icd11/mms",
+          "label": null,
+          "score": null
+        },
+        {
+          "text": "COVID-19 vaccine, non-replicating viral vector",
+          "code": "XM9QW8",
+          "system": "http://id.who.int/icd11/mms",
+          "label": null,
+          "score": null
+        },
+        {
+          "text": "XM4YL8",
+          "code": "COVID-19 Vaccine AstraZeneca",
+          "system": "http://id.who.int/icd11/mms",
+          "label": null,
+          "score": null
+        }
+      ],
+    },
+    {
+      "header": false,
+      "dataType": "CNE",
+      "question": "Vaccine brand",
+      "linkId": "brand",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "brand",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answers": [
+        {
+          "text": "Covishield",
+          "code": "covishield",
+          "label": null,
+          "score": null
+        },
+        {
+          "text": "Covaxin",
+          "code": "covaxin",
+          "label": null,
+          "score": null
+        },
+        {
+          "text": "Sputnik V",
+          "code": "sputnik v",
+          "label": null,
+          "score": null
+        },
+  
+      ],
+    
+    },
+    {
+      "header": false,
+      "dataType": "CNE",
+      "question": "Vaccine manufacturer",
+      "linkId": "manufacturer",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "manufacturer",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "0",
+        "max": "1"
+      },
+      "editable": "1",
+      "answers": [
+        {
+          "text": "Covishield",
+          "code": "covishield",
+          "label": null,
+          "score": null
+        },
+        {
+          "text": "Covaxin",
+          "code": "covaxin",
+          "label": null,
+          "score": null
+        },
+        {
+          "text": "Sputnik V",
+          "code": "sputnik v",
+          "label": null,
+          "score": null
+        },
+  
+      ],
+    },
+    {
+      "header": false,
+      "dataType": "CNE",
+      "question": "Vaccine market authorization holder",
+      "linkId": "ma_holder",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "ma_holder",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "0",
+        "max": "1"
+      },
+      "editable": "1",
+      "answers": null
+    },
+    {
+      "header": false,
+      "dataType": "ST",
+      "question": "Vaccine batch number",
+      "linkId": "lot",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "lot",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "editable": "1"
+    },
+    {
+      "header": false,
+      "dataType": "DT",
+      "question": "Date of vaccine",
+      "linkId": "date",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "date",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "editable": "1"
+    },
+    {
+      "header": false,
+      "dataType": "DT",
+      "question": "Vaccination valid from",
+      "linkId": "vaccine_valid",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "vaccine_valid",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "0",
+        "max": "1"
+      },
+      "editable": "1"
+    },
+    {
+      "header": false,
+      "dataType": "INT",
+      "question": "Dose number",
+      "linkId": "dose",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "dose",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "editable": "1"
+    },
+    {
+      "header": false,
+      "dataType": "INT",
+      "question": "Total doses",
+      "linkId": "total_doses",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "total_doses",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "0",
+        "max": "1"
+      },
+      "editable": "1"
+    },
+    {
+      "header": false,
+      "dataType": "CNE",
+      "question": "Country of vaccination",
+      "linkId": "country",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "country",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "editable": "1",
+      "answers": [
+        {
+          "text": "India",
+          "code": "IN",
+          "label": null,
+          "score": null
+        }
+  
+      ],
+    },
+    {
+      "header": false,
+      "dataType": "ST",
+      "question": "Administering centre",
+      "linkId": "centre",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "centre",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "editable": "1"
+    },
+    {
+      "header": false,
+      "dataType": "ST",
+      "question": "Health worker identifier",
+      "linkId": "hw",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "hw",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "0",
+        "max": "1"
+      },
+      "editable": "1"
+    },
+    {
+      "header": false,
+      "dataType": "CNE",
+      "question": "Disease or agent targeted",
+      "linkId": "disease",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "disease",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "0",
+        "max": "1"
+      },
+      "editable": "1", 
+      "answers": [
+        {
+          "text": "COVID-19",
+          "code": "RA01",
+          "system": "http://id.who.int/icd11/mms",
+          "label": null,
+          "score": null
+        }
+      ],
+    },
+    {
+      "header": false,
+      "dataType": "DT",
+      "question": "Due date of next dose",
+      "linkId": "due_date",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "due_date",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "0",
+        "max": "1"
+      },
+      "editable": "1"
+    },
+    {
+      "header": false,
+      "dataType": "ST",
+      "question": "Certificate issuer",
+      "linkId": "pha",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "pha",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "editable": "1"
+    },
+    {
+      "header": false,
+      "dataType": "ST",
+      "question": "Health certificate identifier",
+      "linkId": "hcid",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "hcid",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "editable": "1"
+    },
+    {
+      "header": false,
+      "dataType": "DT",
+      "question": "Certificate valid from",
+      "linkId": "valid_from",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "valid_from",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "0",
+        "max": "1"
+      },
+      "editable": "1"
+    },
+    {
+      "header": false,
+      "dataType": "DT",
+      "question": "Certificate valid until",
+      "linkId": "valid_until",
+      "questionCodeSystem": "LinkId",
+      "questionCode": "valid_until",
+      "questionCardinality": {
+        "min": "1",
+        "max": "1"
+      },
+      "answerCardinality": {
+        "min": "0",
+        "max": "1"
+      },
+      "editable": "1"
+    }],
+        templateOptions:{viewMode: 'md'}
+      };
+      
+      LForms.Util.addFormToPage(formDef, 'formContainer');
+      </script>
+
+  </body>
+  
+</html>
